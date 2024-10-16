@@ -15,7 +15,7 @@ const PopularMenu = () => {
         heading={"FROM OUR MENU"}
         subHeading={"---Check it out---"}
       />
-     <div className="grid gap-4 m-4 space-y-6 md:grid-cols-2">
+     <div className="grid items-center justify-center gap-4 m-4 space-y-6 md:grid-cols-2">
         {menu?.map(item=><MenuItem key={item?._id} item={item}/>)}
      </div>
     </div>
