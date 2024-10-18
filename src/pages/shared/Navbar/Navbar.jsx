@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const navOptions = (
     <>
       <li className="text-[#EEFF25] text-xs font-bold">
-        <a>HOME</a>
+        <Link to='/'><a>HOME</a></Link>
       </li>
       <li className="text-[#fff] text-xs font-bold">
         <a>CONTACT US</a>
@@ -11,7 +13,9 @@ const Navbar = () => {
         <a>DASHBOARD</a>
       </li>
       <li className="text-[#fff] text-xs font-bold">
-        <a>OUR MENU</a>
+        <Link to="/menu">
+          <a>OUR MENU</a>
+        </Link>
       </li>
       <li className="text-[#fff] text-xs font-bold">
         <a>OUR SHOP</a>
